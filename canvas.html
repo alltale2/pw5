@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Canvas</title>
+    <link rel="stylesheet" href="assets/css/canvas.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        window.onload = function () {
+            canvas('#draw', {
+                width: 500,
+                height: 300,
+                strokeWidth: 5,
+                strokeColor: "#df4b26"
+            })
+        };
+
+
+    </script>
 </head>
 <body>
     <header class="header">
@@ -14,6 +27,13 @@
     <div class="container">
         <main class="center column">
             <article>
+                <h1>Canvas</h1>
+                <canvas id="draw">
+                    
+                </canvas>
+                <div class="toolbar" id="toolbar">
+                </div>
+                
             </article>
         </main>
         <nav class="left column">
@@ -39,5 +59,6 @@
             <img class="logo" src="assets/img/flames.svg" alt="logo">
         </footer>
     </div>
+    <script src="assets/js/canvas.js"></script>
 </body>
 </html>
